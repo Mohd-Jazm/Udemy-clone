@@ -49,6 +49,10 @@ h1 {
     display: flex;
     gap: 10px;
 }
+
+.Navbar4{
+    display: none;
+}
 /*My Learning popup*/
 
 .mylearning{
@@ -151,7 +155,9 @@ h1 {
 }
 
 .coursecard {
-    width: 280px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
 }
 
 .coursecard img {
@@ -228,4 +234,27 @@ h1 {
 
 .footer__two h1 {
     color: white;
+}
+
+@media screen and (max-width:800px) {
+    body{
+        font: size 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+.coursecard{
+    flex-basis: 40%;
+}
+.categories{
+    display: none;
+}
+
+.Navbar2, .Navbar3{
+    display: none;
+}
+
+.Navbar4{
+    display: block;
+}
 }
